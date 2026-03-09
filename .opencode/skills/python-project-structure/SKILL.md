@@ -15,6 +15,7 @@ Use when creating or refactoring Python module and package structure.
 - Apply naming and layout conventions consistently.
 
 ## Structure rules
+- FORBIDDEN: do not introduce or use `requirements.txt`; dependency management MUST STAY!!! in `pyproject.toml` via `uv`.
 - Keep the repository root simple and explicit; common top-level directories are `src/`, `tests/`, `infrastructure/`, `docs/`, and `scripts/`.
 - Keep application code under `src/<package_name>/`.
 - Start small and grow in layers: begin with a few cohesive modules, then add `services`, `repositories`, `models`, `adapters`, `api`, `config` only when the codebase needs them.

@@ -51,7 +51,6 @@ Use when editing `.gitlab-ci.yml`, CI templates, or pipeline structure for this 
 
 ## Rules
 - Install Python dependencies from `pyproject.toml` using `uv`.
-- Do not introduce `requirements.txt` unless an external system strictly requires it.
 - Use `needs:` to make job dependencies explicit instead of relying only on stage order.
 - Use `rules:changes` to avoid running Terraform jobs when no infrastructure files changed.
 - Keep artifacts and reports explicit so later jobs and reviewers can inspect results.
